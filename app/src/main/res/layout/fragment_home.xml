@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:canLoop="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="累计投资金额"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_home_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5,000000000"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_fragmenthome_touzi"
+                android:gravity="center"
+                android:text="万元"
+                android:visibility="gone"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        <TextView
+            android:id="@+id/tv_touzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计投资金额"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_home_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5,000"
+                android:textSize="15dp" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人次"
+            android:layout_toEndOf="@+id/tv_fragmenthome_touzi"
+            android:textSize="15dp"
+                android:visibility="gone"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+       <ListView
+           android:id="@+id/lv_homefragment"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </ListView>
+    <GridView
+        android:id="@+id/gv_fragmenthome"
+        android:numColumns="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </GridView>
+</LinearLayout>

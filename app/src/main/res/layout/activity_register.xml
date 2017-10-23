@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bc.capital.ui.activity.sub.RegisterActivity">
+
+    <include
+        android:id="@+id/app_title"
+        layout="@layout/top_title" />
+
+    <LinearLayout
+        android:id="@+id/register_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_title"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/register_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/phone_number"
+            android:drawablePadding="8dp"
+            android:maxLength="11"
+            android:hint="@string/system_you_phone_hint"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/register_verification_code_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="10dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@mipmap/yan_zheng_ma"
+                android:hint="@string/hint_register_verification_code_et"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/register_get_verification_code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@mipmap/forget_pwd_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/get_verification_code_btn"
+                android:textColor="#f19400" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/register_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:password="true"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/register_pwd"
+            android:hint="@string/hint_register_pwd_et"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+
+        <EditText
+            android:id="@+id/register_invite_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@mipmap/user_code"
+            android:hint="@string/hint_register_invite_code_et"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/register_and_login_btn_style"
+        android:padding="10dp"
+        android:text="@string/user_register_btn"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</RelativeLayout>
